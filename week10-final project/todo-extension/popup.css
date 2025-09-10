@@ -1,0 +1,134 @@
+:root {
+  --width: 360px;
+  --accent: #2b6cb0;
+  --accent-dark: #1e4e8c;
+  --bg: #f9f9f9;
+  --card-bg: #fff;
+  --text: #333;
+  --completed: #888;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  width: var(--width);
+  margin: 0;
+  padding: 12px;
+  background: var(--bg);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+  color: var(--accent-dark);
+}
+
+.input-row {
+  display: flex;
+  gap: 6px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+#addBtn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+
+#addBtn:hover {
+  background: var(--accent-dark);
+}
+
+.task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  margin-bottom: 4px;
+  border-radius: 8px;
+  background: var(--card-bg);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: background 0.2s;
+}
+
+.task-list li:hover {
+  background: #eef5fb;
+}
+
+.task-list li .text {
+  flex: 1;
+  margin-left: 8px;
+  word-break: break-word;
+}
+
+.task-list li .text.completed {
+  color: var(--completed);
+  text-decoration: line-through;
+}
+
+button.delete {
+  background: #e53e3e;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.task-list li:hover button.delete {
+  opacity: 1;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  padding-top: 6px;
+  border-top: 1px solid #ddd;
+}
+
+#counts {
+  color: var(--text);
+}
+
+#clearBtn {
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+#clearBtn:hover {
+  background: #f2f2f2;
+}

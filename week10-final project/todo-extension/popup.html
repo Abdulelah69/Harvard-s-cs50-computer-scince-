@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CS50 To-Do</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>My Tasks 📋</h1>
+    </header>
+
+    <div class="input-row">
+      <input id="taskInput" type="text" placeholder="Add a new task..." aria-label="New task" />
+      <button id="addBtn" title="Add task">➕</button>
+    </div>
+
+    <ul id="taskList" class="task-list" role="list"></ul>
+
+    <footer>
+      <div id="counts"></div>
+      <button id="clearBtn">Clear All</button>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

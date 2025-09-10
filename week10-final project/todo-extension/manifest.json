@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "CS50 To-Do",
+  "version": "1.0",
+  "description": "A simple task manager Chrome extension for CS50.",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
