@@ -1,5 +1,5 @@
 # YOUR PROJECT TITLE cs50 to-do
-#### Video Demo:  https://youtu.be/UfEYiofSPvA
+#### Video Demo:  https://youtu.be/UfEYiofSPv
 CS50 To-Do Chrome Extension
 
 Overview
@@ -190,5 +190,6 @@ Future Enhancements
 ---
 
 Conclusion
+
 
 The CS50 To-Do Chrome Extension is a functional, aesthetically pleasing, and user-centric tool for task management. It showcases clean design, thoughtful interaction design, and efficient use of web technologies, making it an excellent project for CS50 submission or a personal productivity tool. Its lightweight structure, persistent storage, and customizable options provide both flexibility and practicality, allowing users to manage their daily tasks efficiently directly from their browser.
